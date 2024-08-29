@@ -54,7 +54,7 @@ void start_shell() {
         int a_length;
         getcwd(pth,1024);
         char *dir = get_dir(pth);
-        printf("[nyush %s]$ ", dir);
+        printf("[sh %s]$ ", dir);
         fflush(stdout);
         a_length = getline(&input, &input_size, stdin);
         if(a_length == -1) {
